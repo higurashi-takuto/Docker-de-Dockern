@@ -8,6 +8,6 @@ RUN apk update && \
     for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do \
       ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"; \
     done' && \
-    sed -i s/'sorin'/'powerline'/ root/.zpreztorc
+    sed -i s/'sorin'/'agnoster'/ root/.zpreztorc
 
 CMD ["zsh"]
